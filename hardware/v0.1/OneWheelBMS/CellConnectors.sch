@@ -1,0 +1,242 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x14 J?
+U 1 1 5EF2280D
+P 6800 3800
+AR Path="/5EF2280D" Ref="J?"  Part="1" 
+AR Path="/5EF1BBE0/5EF2280D" Ref="J10"  Part="1" 
+F 0 "J10" H 6880 3792 50  0000 L CNN
+F 1 "Conn_01x14" H 6880 3701 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B14B-XH-A_1x14_P2.50mm_Vertical" H 6800 3800 50  0001 C CNN
+F 3 "~" H 6800 3800 50  0001 C CNN
+	1    6800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF2281A
+P 6350 1850
+AR Path="/5EF2281A" Ref="#PWR?"  Part="1" 
+AR Path="/5EF1BBE0/5EF2281A" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 6350 1600 50  0001 C CNN
+F 1 "GND" V 6355 1722 50  0000 R CNN
+F 2 "" H 6350 1850 50  0001 C CNN
+F 3 "" H 6350 1850 50  0001 C CNN
+	1    6350 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF22820
+P 6350 2050
+AR Path="/5EF22820" Ref="#PWR?"  Part="1" 
+AR Path="/5EF1BBE0/5EF22820" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 6350 1800 50  0001 C CNN
+F 1 "GND" V 6355 1922 50  0000 R CNN
+F 2 "" H 6350 2050 50  0001 C CNN
+F 3 "" H 6350 2050 50  0001 C CNN
+	1    6350 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF22826
+P 6350 3300
+AR Path="/5EF22826" Ref="#PWR?"  Part="1" 
+AR Path="/5EF1BBE0/5EF22826" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 6350 3050 50  0001 C CNN
+F 1 "GND" V 6355 3172 50  0000 R CNN
+F 2 "" H 6350 3300 50  0001 C CNN
+F 3 "" H 6350 3300 50  0001 C CNN
+	1    6350 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF2282C
+P 6350 3500
+AR Path="/5EF2282C" Ref="#PWR?"  Part="1" 
+AR Path="/5EF1BBE0/5EF2282C" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 6350 3250 50  0001 C CNN
+F 1 "GND" V 6355 3372 50  0000 R CNN
+F 2 "" H 6350 3500 50  0001 C CNN
+F 3 "" H 6350 3500 50  0001 C CNN
+	1    6350 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x13 J?
+U 1 1 5EF22832
+P 6800 2350
+AR Path="/5EF22832" Ref="J?"  Part="1" 
+AR Path="/5EF1BBE0/5EF22832" Ref="J9"  Part="1" 
+F 0 "J9" H 6880 2392 50  0000 L CNN
+F 1 "Conn_01x13" H 6880 2301 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B13B-XH-A_1x13_P2.50mm_Vertical" H 6800 2350 50  0001 C CNN
+F 3 "~" H 6800 2350 50  0001 C CNN
+	1    6800 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6600 2150
+NoConn ~ 6600 3600
+Wire Wire Line
+	6600 3300 6350 3300
+Wire Wire Line
+	6350 3500 6600 3500
+Wire Wire Line
+	6350 1850 6600 1850
+Wire Wire Line
+	6350 2050 6600 2050
+Text Label 5050 2850 0    50   ~ 0
+CELL1
+Text Label 5050 2750 0    50   ~ 0
+CELL2
+Text Label 5050 2650 0    50   ~ 0
+CELL3
+Text Label 5050 2550 0    50   ~ 0
+CELL4
+Text Label 5050 2450 0    50   ~ 0
+CELL5
+Text Label 5050 2350 0    50   ~ 0
+CELL6
+Text Label 5050 2250 0    50   ~ 0
+CELL7
+Text Label 5050 4500 0    50   ~ 0
+CELL8
+Text Label 5050 4400 0    50   ~ 0
+CELL9
+Text Label 5050 4300 0    50   ~ 0
+CELL10
+Text Label 5050 4200 0    50   ~ 0
+CELL11
+Text Label 5050 4100 0    50   ~ 0
+CELL12
+Text Label 5050 4000 0    50   ~ 0
+CELL13
+Text Label 5050 3900 0    50   ~ 0
+CELL14
+Text Label 5650 1950 0    50   ~ 0
+NTC1
+Text Label 5650 1750 0    50   ~ 0
+NTC2
+Text Label 5650 3400 0    50   ~ 0
+NTC3
+Text Label 5650 3200 0    50   ~ 0
+NTC4
+Entry Wire Line
+	5450 1850 5550 1750
+Entry Wire Line
+	5450 2050 5550 1950
+Entry Wire Line
+	4850 2350 4950 2250
+Entry Wire Line
+	4850 2450 4950 2350
+Entry Wire Line
+	4850 2550 4950 2450
+Entry Wire Line
+	4850 2650 4950 2550
+Entry Wire Line
+	4850 2750 4950 2650
+Entry Wire Line
+	4850 2850 4950 2750
+Entry Wire Line
+	4850 2950 4950 2850
+Entry Wire Line
+	5450 3300 5550 3200
+Entry Wire Line
+	5450 3500 5550 3400
+Entry Wire Line
+	4850 3800 4950 3700
+Entry Wire Line
+	4850 3900 4950 3800
+Entry Wire Line
+	4850 4000 4950 3900
+Entry Wire Line
+	4850 4100 4950 4000
+Entry Wire Line
+	4850 4200 4950 4100
+Entry Wire Line
+	4850 4300 4950 4200
+Entry Wire Line
+	4850 4400 4950 4300
+Entry Wire Line
+	4850 4500 4950 4400
+Entry Wire Line
+	4850 4600 4950 4500
+Wire Wire Line
+	5550 1750 6600 1750
+Wire Wire Line
+	5550 1950 6600 1950
+Wire Wire Line
+	4950 2250 6600 2250
+Wire Wire Line
+	4950 2350 6600 2350
+Wire Wire Line
+	4950 2450 6600 2450
+Wire Wire Line
+	4950 2550 6600 2550
+Wire Wire Line
+	4950 2650 6600 2650
+Wire Wire Line
+	4950 2750 6600 2750
+Wire Wire Line
+	4950 2850 6600 2850
+Wire Wire Line
+	5550 3200 6600 3200
+Wire Wire Line
+	5550 3400 6600 3400
+Wire Wire Line
+	4950 3700 6600 3700
+Wire Wire Line
+	4950 3900 6600 3900
+Wire Wire Line
+	4950 4000 6600 4000
+Wire Wire Line
+	4950 4100 6600 4100
+Wire Wire Line
+	4950 4200 6600 4200
+Wire Wire Line
+	4950 4300 6600 4300
+Wire Wire Line
+	4950 4400 6600 4400
+Wire Wire Line
+	4950 3800 6600 3800
+Wire Wire Line
+	4950 4500 6600 4500
+Text Label 5050 3800 0    50   ~ 0
+CELL15
+Text Label 5050 3700 0    50   ~ 0
+CELL16
+Wire Bus Line
+	4850 4700 3700 4700
+Wire Bus Line
+	5450 5000 3700 5000
+Text HLabel 3700 4700 0    50   Output ~ 0
+CELL[0..16]
+Text HLabel 3700 5000 0    50   Output ~ 0
+NTC[1..4]
+Text Label 5050 2950 0    50   ~ 0
+CELL0
+Entry Wire Line
+	4850 3050 4950 2950
+Wire Wire Line
+	4950 2950 6600 2950
+Wire Bus Line
+	5450 1850 5450 5000
+Wire Bus Line
+	4850 2350 4850 4700
+$EndSCHEMATC

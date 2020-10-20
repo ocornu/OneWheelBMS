@@ -1,0 +1,274 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GSD Q4
+U 1 1 5F121731
+P 8350 3350
+F 0 "Q4" V 8692 3350 50  0000 C CNN
+F 1 "FDBL86210_F085" V 8601 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1_ThermalVias" H 8550 3450 50  0001 C CNN
+F 3 "~" H 8350 3350 50  0001 C CNN
+	1    8350 3350
+	0    -1   -1   0   
+$EndComp
+Text HLabel 6350 4550 3    50   Input ~ 0
+CHG
+Text HLabel 8350 4550 3    50   Input ~ 0
+DSG
+Wire Wire Line
+	8150 3250 7350 3250
+Text HLabel 7350 4550 3    50   Output ~ 0
+CD
+Wire Wire Line
+	7350 4550 7350 3250
+Connection ~ 7350 3250
+Wire Wire Line
+	7350 3250 6550 3250
+$Comp
+L power:+VDC #PWR037
+U 1 1 5F1F103D
+P 9350 3050
+F 0 "#PWR037" H 9350 2950 50  0001 C CNN
+F 1 "+VDC" H 9350 3325 50  0000 C CNN
+F 2 "" H 9350 3050 50  0001 C CNN
+F 3 "" H 9350 3050 50  0001 C CNN
+	1    9350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR036
+U 1 1 5F1F1265
+P 5350 3050
+F 0 "#PWR036" H 5350 2900 50  0001 C CNN
+F 1 "+BATT" H 5365 3223 50  0000 C CNN
+F 2 "" H 5350 3050 50  0001 C CNN
+F 3 "" H 5350 3050 50  0001 C CNN
+	1    5350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3250 5850 3250
+Wire Wire Line
+	5350 3250 5350 3050
+Wire Wire Line
+	8550 3250 8850 3250
+Wire Wire Line
+	9350 3250 9350 3050
+$Comp
+L Device:R_Small_US R38
+U 1 1 5F1F2DBA
+P 8850 3450
+F 0 "R38" H 8918 3496 50  0000 L CNN
+F 1 "10M" H 8918 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8850 3450 50  0001 C CNN
+F 3 "~" H 8850 3450 50  0001 C CNN
+	1    8850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R33
+U 1 1 5F1F3036
+P 5850 3450
+F 0 "R33" H 5918 3496 50  0000 L CNN
+F 1 "10M" H 5918 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5850 3450 50  0001 C CNN
+F 3 "~" H 5850 3450 50  0001 C CNN
+	1    5850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener_Small D3
+U 1 1 5F1F3CBC
+P 5350 3450
+F 0 "D3" V 5396 3380 50  0000 R CNN
+F 1 "16V" V 5305 3380 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 5350 3450 50  0001 C CNN
+F 3 "MMSZ5246B-7-F" V 5350 3450 50  0001 C CNN
+	1    5350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener_Small D4
+U 1 1 5F1F40E7
+P 9350 3450
+F 0 "D4" V 9396 3380 50  0000 R CNN
+F 1 "16V" V 9305 3380 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 9350 3450 50  0001 C CNN
+F 3 "MMSZ5246B-7-F" V 9350 3450 50  0001 C CNN
+	1    9350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R37
+U 1 1 5F1F4449
+P 8350 4050
+F 0 "R37" H 8418 4096 50  0000 L CNN
+F 1 "5.1k" H 8418 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8350 4050 50  0001 C CNN
+F 3 "~" H 8350 4050 50  0001 C CNN
+	1    8350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R35
+U 1 1 5F1F4775
+P 6350 4050
+F 0 "R35" H 6418 4096 50  0000 L CNN
+F 1 "5.1k" H 6418 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6350 4050 50  0001 C CNN
+F 3 "~" H 6350 4050 50  0001 C CNN
+	1    6350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3350 8850 3250
+Connection ~ 8850 3250
+Wire Wire Line
+	8850 3250 9350 3250
+Wire Wire Line
+	9350 3350 9350 3250
+Connection ~ 9350 3250
+Wire Wire Line
+	9350 3550 9350 3650
+Wire Wire Line
+	9350 3650 8850 3650
+Connection ~ 8350 3650
+Wire Wire Line
+	8350 3650 8350 3550
+Wire Wire Line
+	8850 3550 8850 3650
+Connection ~ 8850 3650
+Wire Wire Line
+	8850 3650 8350 3650
+Wire Wire Line
+	6350 3650 5850 3650
+Wire Wire Line
+	5850 3650 5850 3550
+Connection ~ 6350 3650
+Wire Wire Line
+	6350 3650 6350 3550
+Wire Wire Line
+	5850 3650 5350 3650
+Wire Wire Line
+	5350 3650 5350 3550
+Connection ~ 5850 3650
+Wire Wire Line
+	5350 3350 5350 3250
+Connection ~ 5350 3250
+Wire Wire Line
+	5850 3350 5850 3250
+Connection ~ 5850 3250
+Wire Wire Line
+	5850 3250 5600 3250
+Wire Wire Line
+	6550 2350 6850 2350
+Wire Wire Line
+	7350 2350 7350 3250
+$Comp
+L Device:R_Small_US R36
+U 1 1 5F20AB9C
+P 6850 2150
+F 0 "R36" H 6918 2196 50  0000 L CNN
+F 1 "10M" H 6918 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6850 2150 50  0001 C CNN
+F 3 "~" H 6850 2150 50  0001 C CNN
+	1    6850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2350 6850 2250
+Connection ~ 6850 2350
+Wire Wire Line
+	6850 2350 7350 2350
+Wire Wire Line
+	6850 2050 6850 1950
+Wire Wire Line
+	6850 1950 6350 1950
+Wire Wire Line
+	6350 1950 6350 2050
+Text HLabel 6350 1050 1    50   Input ~ 0
+PCHG
+$Comp
+L Device:R_Small_US R34
+U 1 1 5F20BEB6
+P 6350 1500
+F 0 "R34" H 6418 1546 50  0000 L CNN
+F 1 "5.1k" H 6418 1455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6350 1500 50  0001 C CNN
+F 3 "~" H 6350 1500 50  0001 C CNN
+	1    6350 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 1950
+$Comp
+L Device:R_Small_US R32
+U 1 1 5F20CCC6
+P 5850 2350
+F 0 "R32" V 5645 2350 50  0000 C CNN
+F 1 "5.1k" V 5736 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" H 5850 2350 50  0001 C CNN
+F 3 "~" H 5850 2350 50  0001 C CNN
+	1    5850 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 2350 5600 2350
+Wire Wire Line
+	5600 2350 5600 3250
+Connection ~ 5600 3250
+Wire Wire Line
+	5600 3250 5350 3250
+Wire Wire Line
+	5950 2350 6150 2350
+Wire Wire Line
+	6350 1600 6350 1950
+Wire Wire Line
+	6350 1050 6350 1400
+Wire Wire Line
+	8350 4150 8350 4550
+Wire Wire Line
+	8350 3650 8350 3950
+Wire Wire Line
+	6350 3650 6350 3950
+Wire Wire Line
+	6350 4150 6350 4550
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 5F121FED
+P 6350 3350
+F 0 "Q3" V 6692 3350 50  0000 C CNN
+F 1 "FDBL86210_F085" V 6601 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1_ThermalVias" H 6550 3450 50  0001 C CNN
+F 3 "~" H 6350 3350 50  0001 C CNN
+	1    6350 3350
+	0    1    -1   0   
+$EndComp
+Text Notes 9650 3550 0    50   ~ 0
+V(GS) of fet is +-20v\n16v Zener to protect gate
+Text Notes 600  700  0    50   ~ 0
+Original mosfet FDB047N10
+$Comp
+L Device:Q_PMOS_GSD Q2
+U 1 1 5FB2D779
+P 6350 2250
+F 0 "Q2" V 6599 2250 50  0000 C CNN
+F 1 "SI2325DS-T1-E3" V 6690 2250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 6550 2350 50  0001 C CNN
+F 3 "~" H 6350 2250 50  0001 C CNN
+	1    6350 2250
+	0    -1   1    0   
+$EndComp
+$EndSCHEMATC

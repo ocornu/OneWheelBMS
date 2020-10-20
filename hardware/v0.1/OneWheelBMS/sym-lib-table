@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name OneWheelBMS)(type Legacy)(uri ${KIPRJMOD}/OneWheelBMS.lib)(options "")(descr ""))
+)

@@ -1,0 +1,336 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR041
+U 1 1 5FC2ABA0
+P 5350 1500
+F 0 "#PWR041" H 5350 1350 50  0001 C CNN
+F 1 "+5V" H 5365 1673 50  0000 C CNN
+F 2 "" H 5350 1500 50  0001 C CNN
+F 3 "" H 5350 1500 50  0001 C CNN
+	1    5350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-VDC #PWR042
+U 1 1 5FC2B47D
+P 5350 4750
+F 0 "#PWR042" H 5350 4650 50  0001 C CNN
+F 1 "-VDC" H 5350 5025 50  0000 C CNN
+F 2 "" H 5350 4750 50  0001 C CNN
+F 3 "" H 5350 4750 50  0001 C CNN
+	1    5350 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J11
+U 1 1 5FC2C11C
+P 8400 3150
+F 0 "J11" H 8480 3192 50  0000 L CNN
+F 1 "Conn_01x03" H 8480 3101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8400 3150 50  0001 C CNN
+F 3 "~" H 8400 3150 50  0001 C CNN
+	1    8400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5FC2D2FD
+P 5350 1600
+F 0 "FB1" H 5450 1646 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" H 5450 1555 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 5280 1600 50  0001 C CNN
+F 3 "~" H 5350 1600 50  0001 C CNN
+	1    5350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C32
+U 1 1 5FC2DAA1
+P 5600 2000
+F 0 "C32" V 5829 2000 50  0000 C CNN
+F 1 "22u" V 5738 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5600 2000 50  0001 C CNN
+F 3 "~" H 5600 2000 50  0001 C CNN
+	1    5600 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 1700 5350 2000
+Connection ~ 5350 2000
+$Comp
+L power:-VDC #PWR043
+U 1 1 5FC2FFC4
+P 5850 2400
+F 0 "#PWR043" H 5850 2300 50  0001 C CNN
+F 1 "-VDC" H 5850 2675 50  0000 C CNN
+F 2 "" H 5850 2400 50  0001 C CNN
+F 3 "" H 5850 2400 50  0001 C CNN
+	1    5850 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 2000 5350 2000
+$Comp
+L Device:C_Small C33
+U 1 1 5FC32928
+P 5600 2400
+F 0 "C33" V 5829 2400 50  0000 C CNN
+F 1 "100n" V 5738 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5600 2400 50  0001 C CNN
+F 3 "~" H 5600 2400 50  0001 C CNN
+	1    5600 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 2000 5850 2000
+Wire Wire Line
+	5850 2000 5850 2400
+Wire Wire Line
+	5700 2400 5850 2400
+Connection ~ 5850 2400
+Wire Wire Line
+	5350 2000 5350 2400
+Wire Wire Line
+	5500 2400 5350 2400
+Connection ~ 5350 2400
+$Comp
+L power:+5V #PWR046
+U 1 1 5FC3899C
+P 8200 3050
+F 0 "#PWR046" H 8200 2900 50  0001 C CNN
+F 1 "+5V" H 8215 3223 50  0000 C CNN
+F 2 "" H 8200 3050 50  0001 C CNN
+F 3 "" H 8200 3050 50  0001 C CNN
+	1    8200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-VDC #PWR047
+U 1 1 5FC38D95
+P 8200 3250
+F 0 "#PWR047" H 8200 3150 50  0001 C CNN
+F 1 "-VDC" H 8200 3525 50  0000 C CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 5FC3A49D
+P 7500 3300
+F 0 "C34" H 7592 3346 50  0000 L CNN
+F 1 "100n" H 7592 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7500 3300 50  0001 C CNN
+F 3 "~" H 7500 3300 50  0001 C CNN
+	1    7500 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 3150
+Wire Wire Line
+	7500 3150 8200 3150
+$Comp
+L Device:R_Small_US R40
+U 1 1 5FC3ADAF
+P 7500 3000
+F 0 "R40" H 7568 3046 50  0000 L CNN
+F 1 "10k" H 7568 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7500 3000 50  0001 C CNN
+F 3 "~" H 7500 3000 50  0001 C CNN
+	1    7500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3200 7500 3150
+Wire Wire Line
+	7500 3150 7500 3100
+$Comp
+L power:+5V #PWR044
+U 1 1 5FC3C49A
+P 7500 2900
+F 0 "#PWR044" H 7500 2750 50  0001 C CNN
+F 1 "+5V" H 7515 3073 50  0000 C CNN
+F 2 "" H 7500 2900 50  0001 C CNN
+F 3 "" H 7500 2900 50  0001 C CNN
+	1    7500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-VDC #PWR045
+U 1 1 5FC3C8C0
+P 7500 3400
+F 0 "#PWR045" H 7500 3300 50  0001 C CNN
+F 1 "-VDC" H 7500 3675 50  0000 C CNN
+F 2 "" H 7500 3400 50  0001 C CNN
+F 3 "" H 7500 3400 50  0001 C CNN
+	1    7500 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 5FC3FB04
+P 7200 4350
+F 0 "Y1" V 7154 4438 50  0000 L CNN
+F 1 "32.768" V 7245 4438 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 7200 4350 50  0001 C CNN
+F 3 "~" H 7200 4350 50  0001 C CNN
+	1    7200 4350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C30
+U 1 1 5FC4081E
+P 7450 4250
+F 0 "C30" V 7679 4250 50  0000 C CNN
+F 1 "TBD" V 7588 4250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 4250 50  0001 C CNN
+F 3 "~" H 7450 4250 50  0001 C CNN
+	1    7450 4250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C31
+U 1 1 5FC40FD5
+P 7450 4450
+F 0 "C31" V 7200 4450 50  0000 C CNN
+F 1 "TBD" V 7300 4450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 4450 50  0001 C CNN
+F 3 "~" H 7450 4450 50  0001 C CNN
+	1    7450 4450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7350 4250 7200 4250
+Connection ~ 7200 4250
+Connection ~ 7200 4450
+Wire Wire Line
+	7200 4450 7350 4450
+$Comp
+L power:-VDC #PWR040
+U 1 1 5FC46D19
+P 7900 4450
+F 0 "#PWR040" H 7900 4350 50  0001 C CNN
+F 1 "-VDC" H 7900 4725 50  0000 C CNN
+F 2 "" H 7900 4450 50  0001 C CNN
+F 3 "" H 7900 4450 50  0001 C CNN
+	1    7900 4450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7550 4450 7900 4450
+Wire Wire Line
+	7900 4250 7900 4450
+Connection ~ 7900 4450
+Wire Wire Line
+	7900 4250 7550 4250
+Text HLabel 6300 4150 2    50   BiDi ~ 0
+SDA
+Text HLabel 6300 4050 2    50   Output ~ 0
+SCL
+Wire Wire Line
+	5950 4050 6300 4050
+Wire Wire Line
+	6300 4150 5950 4150
+Wire Wire Line
+	5950 3150 7500 3150
+Text HLabel 6300 3250 2    50   Output ~ 0
+TXD
+Wire Wire Line
+	5950 3250 6300 3250
+Text HLabel 6300 3350 2    50   Input ~ 0
+RXD
+Wire Wire Line
+	5950 3350 6300 3350
+$Comp
+L MCU_Microchip_ATtiny:ATtiny1616-S U3
+U 1 1 5FC69B48
+P 5350 3850
+F 0 "U3" H 5050 4800 50  0000 C CNN
+F 1 "ATtiny1616-S" H 5000 4700 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 5350 3850 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3216_ATtiny1616-data-sheet-40001997B.pdf" H 5350 3850 50  0001 C CNN
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2400 5350 2650
+Wire Wire Line
+	5950 4250 7200 4250
+Wire Wire Line
+	6700 4450 6700 4350
+Wire Wire Line
+	6700 4350 5950 4350
+Wire Wire Line
+	6700 4450 7200 4450
+Text HLabel 4400 4150 0    50   Input ~ 0
+MISO
+Text HLabel 4400 4050 0    50   Output ~ 0
+SCK
+Wire Wire Line
+	4750 4050 4400 4050
+Wire Wire Line
+	4400 4150 4750 4150
+Text HLabel 4400 4350 0    50   BiDi ~ 0
+SS
+Text HLabel 4400 4250 0    50   Output ~ 0
+MOSI
+Wire Wire Line
+	4750 4250 4400 4250
+Wire Wire Line
+	4400 4350 4750 4350
+NoConn ~ 5950 3450
+Text HLabel 6300 3550 2    50   BiDi ~ 0
+IO1
+Wire Wire Line
+	6300 3550 5950 3550
+Text HLabel 6300 3650 2    50   BiDi ~ 0
+IO2
+Wire Wire Line
+	6300 3650 5950 3650
+Text HLabel 6300 3750 2    50   BiDi ~ 0
+IO3
+Wire Wire Line
+	6300 3750 5950 3750
+Text HLabel 6300 3850 2    50   BiDi ~ 0
+IO4
+Wire Wire Line
+	6300 3850 5950 3850
+Text HLabel 6300 4450 2    50   BiDi ~ 0
+IO6
+Wire Wire Line
+	6300 4450 5950 4450
+Text HLabel 6300 4550 2    50   BiDi ~ 0
+IO5
+Wire Wire Line
+	6300 4550 5950 4550
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FD24BAD
+P 5000 2650
+F 0 "#FLG0101" H 5000 2725 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 2823 50  0000 C CNN
+F 2 "" H 5000 2650 50  0001 C CNN
+F 3 "~" H 5000 2650 50  0001 C CNN
+	1    5000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2650 5350 2650
+Connection ~ 5350 2650
+Wire Wire Line
+	5350 2650 5350 2950
+$EndSCHEMATC
